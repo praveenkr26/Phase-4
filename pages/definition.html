@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Definition Finder — NexusAI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/definition.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html" class="nav-logo">
+        <div class="logo-dot"></div>Nexus<span>AI</span>
+      </a>
+      <div class="nav-right">
+        <div class="nav-tools">
+                     <a href="../index.html" class="tool-pill">Home</a>
+          <a href="ask.html" class="tool-pill">Ask</a>
+          <a href="summarizer.html" class="tool-pill">Summarize</a>
+          <a href="idea-spark.html" class="tool-pill">Ideas</a>
+          <a href="definition.html" class="tool-pill active">Define</a>
+        </div>
+        <a href="../index.html" class="nav-back">← Back to Studio</a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="tool-hero">
+        <div class="tool-icon-wrap">📖</div>
+        <div class="tool-eyebrow">Tool 04</div>
+        <h1 class="tool-title">Definition <em>Finder</em></h1>
+        <p class="tool-desc">Search for any term and get a comprehensive, easy-to-understand definition with examples and related terms.</p>
+      </div>
+
+      <!-- SEARCH -->
+      <div class="search-wrap">
+        <input type="text" class="search-input" id="termInput" placeholder="Search any term…" />
+      </div>
+
+      <!-- DEPTH -->
+      <div class="depth-row">
+        <span class="depth-label">Depth:</span>
+        <button class="depth-btn selected" data-depth="simple" onclick="selectDepth(this)">Simple</button>
+        <button class="depth-btn" data-depth="intermediate" onclick="selectDepth(this)">Intermediate</button>
+        <button class="depth-btn" data-depth="detailed" onclick="selectDepth(this)">Detailed</button>
+      </div>
+
+      <button class="define-btn" id="defineBtn" onclick="define()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        Find Definition
+      </button>
+
+      <!-- POPULAR -->
+      <div class="popular-section">
+        <div class="popular-label">Popular Terms</div>
+        <div class="popular-grid" id="popularGrid"></div>
+      </div>
+
+      <div id="resultArea"></div>
+      <div id="historyArea"></div>
+    </main>
+
+    <footer>
+      <div class="footer-copy">© 2025 <span>NexusAI</span> Studio</div>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </footer>
+
+    <script src="../scripts/definition.js"></script>
+  </body>
+</html>

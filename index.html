@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexusAI — Intelligent Content Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- NAV -->
+    <nav id="navbar">
+      <a href="#" class="nav-logo">
+        <div class="logo-dot"></div>
+        Nexus<span>AI</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="mailto:praveenpandit25@navgurukul.org" class="nav-cta">Mail me</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <div class="badge-dot"></div>
+          AI-Powered Content Studio
+        </div>
+        <h1 class="hero-title">
+          Create <em>Brilliant</em><br />Content with AI
+        </h1>
+        <p class="hero-sub">
+          Four intelligent tools powered by advanced AI. Ask anything, summarize text, spark ideas, and uncover definitions — instantly.
+        </p>
+        <div class="hero-actions">
+          <a href="#tools" class="btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            Explore Tools
+          </a>
+          <a href="https://github.com" target="_blank" class="btn-secondary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            View Code
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-num">4<span>+</span></div>
+            <div class="stat-label">AI Tools</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <div class="stat-num">∞</div>
+            <div class="stat-label">Possibilities</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <div class="stat-num">0<span>s</span></div>
+            <div class="stat-label">Learning Curve</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span><em>✦</em> Ask Me Anything <em>✦</em> Quick Summarizer <em>✦</em> Idea Spark <em>✦</em> Definition Finder <em>✦</em> Powered by AI <em>✦</em> Instant Results</span>
+        <span><em>✦</em> Ask Me Anything <em>✦</em> Quick Summarizer <em>✦</em> Idea Spark <em>✦</em> Definition Finder <em>✦</em> Powered by AI <em>✦</em> Instant Results</span>
+      </div>
+    </div>
+
+    <!-- TOOLS -->
+    <section class="section" id="tools">
+      <div class="section-header">
+        <div class="section-eyebrow reveal">Our Suite</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Four Tools, <em>Infinite</em><br />Possibilities
+        </h2>
+        <p class="section-desc reveal reveal-delay-2">
+          Each tool is crafted with precision to deliver exceptional AI-powered results. Choose your tool and start creating.
+        </p>
+      </div>
+
+      <div class="tools-grid">
+        <!-- Ask Me Anything -->
+        <div class="tool-card">
+          <div class="card-img-overlay">
+            <div class="card-img-placeholder ai1">
+              <span class="card-icon">💬</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-tag">Tool 01</div>
+            <h3 class="card-title">Ask Me Anything</h3>
+            <p class="card-desc">Have a burning question? Get instant, thoughtful answers on any topic — from science to philosophy, history to technology.</p>
+            <div class="card-features">
+              <span class="feature-pill">Any Topic</span>
+              <span class="feature-pill">Instant Answers</span>
+              <span class="feature-pill">Deep Insight</span>
+            </div>
+            <a href="pages/ask.html" class="btn-try">
+              Try Now
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Summarizer -->
+        <div class="tool-card">
+          <div class="card-img-overlay">
+            <div class="card-img-placeholder ai2">
+              <span class="card-icon">📄</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-tag">Tool 02</div>
+            <h3 class="card-title">Quick Summarizer</h3>
+            <p class="card-desc">Paste any block of text and receive a crisp, intelligent summary. Save time, extract key insights, and stay informed effortlessly.</p>
+            <div class="card-features">
+              <span class="feature-pill">Paste & Go</span>
+              <span class="feature-pill">Key Insights</span>
+              <span class="feature-pill">Time-Saving</span>
+            </div>
+            <a href="pages/summarizer.html" class="btn-try">
+              Try Now
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Idea Spark -->
+        <div class="tool-card">
+          <div class="card-img-overlay">
+            <div class="card-img-placeholder ai3">
+              <span class="card-icon">✨</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-tag">Tool 03</div>
+            <h3 class="card-title">Idea Spark</h3>
+            <p class="card-desc">Unlock your creative potential. Tell the AI your topic and watch a stream of brilliant, tailored ideas materialize before your eyes.</p>
+            <div class="card-features">
+              <span class="feature-pill">Creative AI</span>
+              <span class="feature-pill">Unlimited Ideas</span>
+              <span class="feature-pill">Any Domain</span>
+            </div>
+            <a href="pages/idea-spark.html" class="btn-try">
+              Try Now
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Definition Finder -->
+        <div class="tool-card">
+          <div class="card-img-overlay">
+            <div class="card-img-placeholder ai4">
+              <span class="card-icon">📚</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-tag">Tool 04</div>
+            <h3 class="card-title">Definition Finder</h3>
+            <p class="card-desc">Type any term — technical jargon, philosophical concept, or everyday word — and get a thorough, eloquent explanation instantly.</p>
+            <div class="card-features">
+              <span class="feature-pill">Any Term</span>
+              <span class="feature-pill">Clear Explanation</span>
+              <span class="feature-pill">With Examples</span>
+            </div>
+            <a href="pages/definition.html" class="btn-try">
+              Try Now
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+      <div class="about-grid">
+        <div class="about-img-wrap reveal">
+          <div class="about-img-frame">
+            <div class="about-img-placeholder">👤</div>
+          </div>
+          <div class="about-img-accent"></div>
+          <div class="about-img-number">NexusAI — 2025</div>
+        </div>
+        <div class="about-text">
+          <div class="section-eyebrow reveal">About</div>
+          <h2 class="section-title reveal reveal-delay-1" style="text-align: left">
+            The Studio <em>Behind</em><br />the Magic
+          </h2>
+          <p class="about-bio reveal reveal-delay-2">
+            NexusAI is a passion project born from a fascination with how artificial intelligence can amplify human creativity and knowledge.
+          </p>
+          <p class="about-body reveal reveal-delay-3">
+            Built with modern JavaScript and powered by advanced AI APIs, this studio represents the intersection of clean engineering and intuitive design. Every tool was
+            crafted to be immediately useful, elegantly simple, and genuinely powerful.
+            <br /><br />
+            The goal is simple: democratize access to AI-powered content creation. No steep learning curve, no complex setup — just open a tool and start creating. Whether
+            you're a writer, researcher, student, or simply curious, NexusAI has something for you.
+          </p>
+          <div class="about-tags reveal reveal-delay-3">
+            <span class="about-tag">JavaScript ES6+</span>
+            <span class="about-tag">AI Integration</span>
+            <span class="about-tag">REST APIs</span>
+            <span class="about-tag">Vanilla CSS</span>
+            <span class="about-tag">Modern Design</span>
+            <span class="about-tag">Async/Await</span>
+          </div>
+          <div class="about-socials reveal reveal-delay-4">
+            <a href="#" class="social-link">𝕏</a>
+            <a href="#" class="social-link">in</a>
+            <a href="#" class="social-link">⌂</a>
+            <a href="#" class="social-link">◉</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-eyebrow reveal">Contact</div>
+          <h2 class="contact-tagline reveal reveal-delay-1">Let's Build Something <em>Remarkable</em></h2>
+          <p class="contact-body reveal reveal-delay-2">
+            Have feedback, a collaboration idea, or just want to say hello? Reach out — every message is read and appreciated.
+          </p>
+          <div class="contact-details reveal reveal-delay-3">
+            <div class="contact-item">
+              <div class="contact-item-icon">✉</div>
+              <span>praveenpandit25@navgurukul.org</span>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">◎</div>
+              <span>Upperla Sukkar, Kangra 150023</span>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">◷</div>
+              <span>Response within 24 hours</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form reveal reveal-delay-2">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" placeholder="Jane" />
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" placeholder="Doe" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="jane@example.com" />
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <select>
+              <option>General Inquiry</option>
+              <option>Collaboration</option>
+              <option>Feedback</option>
+              <option>Bug Report</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Tell me what's on your mind…"></textarea>
+          </div>
+          <button class="form-submit" onclick="submitForm(this)">Send Message →</button>
+          <div class="form-success" id="formSuccess">✦ Message sent — I'll be in touch soon.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <div class="logo-dot"></div>Nexus<span>AI</span>
+          </a>
+          <p>A premium AI-powered content studio built with modern JavaScript and a passion for thoughtful design.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Tools</h4>
+          <ul>
+            <li><a href="pages/ask.html">Ask Me Anything</a></li>
+            <li><a href="pages/summarizer.html">Quick Summarizer</a></li>
+            <li><a href="pages/idea-spark.html">Idea Spark</a></li>
+            <li><a href="pages/definition.html">Definition Finder</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2025 <span>NexusAI</span> Studio. All rights reserved.</div>
+        <div class="footer-legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Summarizer — NexusAI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/summarizer.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html" class="nav-logo">
+        <div class="logo-dot"></div>Nexus<span>AI</span>
+      </a>
+      <div class="nav-right">
+        <div class="nav-tools">
+           <a href="../index.html" class="tool-pill">Home</a>
+          <a href="ask.html" class="tool-pill">Ask</a>
+          <a href="summarizer.html" class="tool-pill active">Summarize</a>
+          <a href="idea-spark.html" class="tool-pill">Ideas</a>
+          <a href="definition.html" class="tool-pill">Define</a>
+        </div>
+        <a href="../index.html" class="nav-back">← Back to Studio</a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="tool-hero">
+        <div class="tool-icon-wrap">📄</div>
+        <div class="tool-eyebrow">Tool 02</div>
+        <h1 class="tool-title">Quick <em>Summarizer</em></h1>
+        <p class="tool-desc">Paste any text and receive an intelligent, concise summary. Extract key insights in seconds.</p>
+      </div>
+
+      <div style="margin-bottom: 16px">
+        <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px">
+          Summary Style
+        </div>
+        <div class="options-row">
+          <button class="option-btn selected" data-mode="concise" onclick="selectMode(this)">Concise</button>
+          <button class="option-btn" data-mode="detailed" onclick="selectMode(this)">Detailed</button>
+          <button class="option-btn" data-mode="bullets" onclick="selectMode(this)">Bullet Points</button>
+          <button class="option-btn" data-mode="executive" onclick="selectMode(this)">Executive Brief</button>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <!-- INPUT -->
+        <div>
+          <div class="panel">
+            <div class="panel-header">
+              <div class="panel-label">📝 Input Text</div>
+              <div class="panel-count" id="wordCount">0 words</div>
+            </div>
+            <textarea class="paste-area" id="textInput" placeholder="Paste your text here…"></textarea>
+            <div class="panel-footer">
+              <button class="clear-btn" onclick="clearInput()">Clear</button>
+              <button class="paste-btn" onclick="pasteFromClipboard()">Paste</button>
+            </div>
+          </div>
+
+          <button class="summarize-btn" id="sumBtn" onclick="summarize()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+              <path d="M21 3v5h-5"></path>
+              <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
+              <path d="M3 21v-5h5"></path>
+            </svg>
+            Summarize
+          </button>
+        </div>
+
+        <!-- OUTPUT -->
+        <div class="output-panel" id="outputPanel">
+          <div class="output-empty" id="outputContent">
+            <div class="output-empty-icon">📝</div>
+            <div class="output-empty-text">Your summary will appear here</div>
+          </div>
+          <button
+            class="copy-btn"
+            id="copyBtn"
+            onclick="copySummary()"
+            style="display: none; position: absolute; right: 20px; top: 20px"
+          >
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            Copy
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-copy">© 2025 <span>NexusAI</span> Studio</div>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </footer>
+
+    <script src="../scripts/summarizer.js"></script>
+  </body>
+</html>

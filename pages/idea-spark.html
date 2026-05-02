@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idea Spark — NexusAI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/idea-spark.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html" class="nav-logo">
+        <div class="logo-dot"></div>Nexus<span>AI</span>
+      </a>
+      <div class="nav-right">
+        <div class="nav-tools">
+                     <a href="../index.html" class="tool-pill">Home</a>
+          <a href="ask.html" class="tool-pill">Ask</a>
+          <a href="summarizer.html" class="tool-pill">Summarize</a>
+          <a href="idea-spark.html" class="tool-pill active">Ideas</a>
+          <a href="definition.html" class="tool-pill">Define</a>
+        </div>
+        <a href="../index.html" class="nav-back">← Back to Studio</a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="tool-hero">
+        <div class="tool-icon-wrap">✨</div>
+        <div class="tool-eyebrow">Tool 03</div>
+        <h1 class="tool-title">Idea <em>Spark</em></h1>
+        <p class="tool-desc">Ignite your creativity. Tell us your topic and we'll generate a stream of brilliant, actionable ideas tailored just for you.</p>
+      </div>
+
+      <!-- CATEGORIES -->
+      <div class="category-grid">
+        <button class="cat-btn selected" data-cat="blog" onclick="selectCat(this)">
+          <div class="cat-icon">📝</div>
+          Blog Ideas
+        </button>
+        <button class="cat-btn" data-cat="business" onclick="selectCat(this)">
+          <div class="cat-icon">💼</div>
+          Business
+        </button>
+        <button class="cat-btn" data-cat="story" onclick="selectCat(this)">
+          <div class="cat-icon">📖</div>
+          Story
+        </button>
+        <button class="cat-btn" data-cat="social" onclick="selectCat(this)">
+          <div class="cat-icon">📱</div>
+          Social Media
+        </button>
+        <button class="cat-btn" data-cat="product" onclick="selectCat(this)">
+          <div class="cat-icon">🛍️</div>
+          Product
+        </button>
+        <button class="cat-btn" data-cat="research" onclick="selectCat(this)">
+          <div class="cat-icon">🔬</div>
+          Research
+        </button>
+        <button class="cat-btn" data-cat="names" onclick="selectCat(this)">
+          <div class="cat-icon">✏️</div>
+          Names
+        </button>
+        <button class="cat-btn" data-cat="custom" onclick="selectCat(this)">
+          <div class="cat-icon">⭐</div>
+          Custom
+        </button>
+      </div>
+
+      <!-- EXAMPLES -->
+      <div class="examples-section">
+        <div class="examples-label">Quick Examples</div>
+        <div class="examples-list" id="examplesList"></div>
+      </div>
+
+      <!-- INPUT -->
+      <div class="input-block">
+        <label class="input-label">Your Topic</label>
+        <input
+          type="text"
+          class="topic-input"
+          id="topicInput"
+          placeholder="e.g. JavaScript, sustainable living, mobile apps…"
+        />
+      </div>
+
+      <div class="options-row">
+        <span class="count-label">Generate</span>
+        <select class="count-select" id="countSelect">
+          <option value="3">3 ideas</option>
+          <option value="5" selected>5 ideas</option>
+          <option value="7">7 ideas</option>
+          <option value="10">10 ideas</option>
+        </select>
+        <span class="count-label">with tone:</span>
+        <button class="tone-btn selected" data-tone="creative" onclick="selectTone(this)">Creative</button>
+        <button class="tone-btn" data-tone="practical" onclick="selectTone(this)">Practical</button>
+      </div>
+
+      <button class="spark-btn" id="sparkBtn" onclick="generateIdeas()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3"></polyline>
+          <line x1="12" y1="12" x2="20" y2="7.5"></line>
+          <line x1="12" y1="12" x2="12" y2="21"></line>
+          <line x1="12" y1="12" x2="4" y2="7.5"></line>
+        </svg>
+        Spark Ideas
+      </button>
+
+      <div id="ideasOutput"></div>
+    </main>
+
+    <footer>
+      <div class="footer-copy">© 2025 <span>NexusAI</span> Studio</div>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </footer>
+
+    <script src="../scripts/idea-spark.js"></script>
+  </body>
+</html>
