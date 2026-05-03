@@ -59,7 +59,7 @@ async function summarize() {
   output.innerHTML = `<div class="loading-state"><div class="loading-dots"><span></span><span></span><span></span></div><div class="loading-text">Reading and analyzing…</div></div>`;
 
   try {
-    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta1/models/gemini-1.5-flash:generateContent?key=AIzaSyB-c2nL-HZNdix7QO63zCa3WJDciooJMpQ`, {
+    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta1/models/gemini-1.5-flash:generateContent?key=`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
