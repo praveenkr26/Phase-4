@@ -496,6 +496,12 @@ nav.scrolled {
   position: relative;
 }
 
+img{
+  width: 300%;
+  height: 130%;
+  object-fit: cover;
+}
+
 .about-img-placeholder {
   width: 100%;
   height: 100%;
