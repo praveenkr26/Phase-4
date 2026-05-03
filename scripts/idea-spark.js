@@ -87,7 +87,7 @@ async function generateIdeas() {
     
     Format each idea as a numbered list with a title and brief 1-2 sentence description. Be specific and detailed.`;
 
-    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta1/models/gemini-1.5-flash:generateContent?key=AIzaSyB-c2nL-HZNdix7QO63zCa3WJDciooJMpQ`, {
+    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta1/models/gemini-1.5-flash:generateContent?`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
