@@ -54,7 +54,7 @@ PART_OF_SPEECH: [noun/verb/adjective/concept/etc]
 DEFINITION: [your main definition - 1-3 sentences]
 DETAILS: [further explanation, context, examples]
 RELATED: [comma-separated list of 4-5 related terms]`;
-    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta1/models/gemini-1.5-flash:generateContent?key=AIzaSyB-c2nL-HZNdix7QO63zCa3WJDciooJMpQ`, {
+    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta1/models/gemini-1.5-flash:generateContent?key=`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
